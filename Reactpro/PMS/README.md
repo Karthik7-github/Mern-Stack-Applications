@@ -1,16 +1,107 @@
-# React + Vite
+# 🗂️ Task Management System (React App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **Task Management System** built using React, where tasks can be created and assigned to different users (employees). The application includes role-based access for **Admin** and **Employees**, providing different dashboards and functionalities.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* 🔐 User Authentication (Admin & Employee login)
+* 👨‍💼 Admin Dashboard to manage and assign tasks
+* 👨‍🔧 Employee Dashboard to view assigned tasks
+* 💾 Local storage used to persist login sessions
+* 🔄 Dynamic UI rendering based on user role
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React.js
+* **State Management:** React Hooks & Context API
+* **Styling:** CSS
+* **Storage:** Browser LocalStorage
 
-## Expanding the ESLint configuration
+## ⚙️ How It Works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. User logs in using email and password
+2. System checks credentials:
+
+   * Admin login (fixed credentials)
+   * Employee login (validated from stored user data)
+3. Based on role:
+
+   * Admin is redirected to Admin Dashboard
+   * Employee is redirected to Employee Dashboard
+4. User session is saved in localStorage
+5. On reload, user remains logged in
+
+## 🔑 Default Credentials
+
+### Admin:
+
+```
+Email: admin@me.com
+Password: 123
+```
+
+### Employees:
+
+* Credentials are stored in the application data (via Context API)
+
+## 📁 Project Structure
+
+```id="q7xk29"
+/src
+  ├── components
+  │     ├── Auth/Login.js
+  │     ├── Dashboard/AdminDashboard.js
+  │     └── Dashboard/EmployeeDashboard.js
+  ├── context/AuthProvider.js
+  ├── App.js
+  └── index.js
+```
+
+## ▶️ Setup Instructions
+
+1. Clone the repository
+2. Navigate to the project folder
+3. Install dependencies:
+
+   ```
+   npm install
+   ```
+4. Start the development server:
+
+   ```
+   npm run dev
+   ```
+
+   or
+
+   ```
+   npm start
+   ```
+5. Open in browser:
+
+   ```
+   http://localhost:3000
+   ```
+
+## 📌 Notes
+
+* Admin credentials are hardcoded for demo purposes
+* Employee data is managed via Context API
+* LocalStorage is used for session persistence (not secure for production)
+
+## 💡 Future Improvements
+
+* Add backend integration (Node.js + MongoDB)
+* Implement secure authentication (JWT)
+* Add task editing, deletion, and status tracking
+* Improve UI/UX with modern design
+
+---
+
+## 📖 Description
+
+This project demonstrates a simple yet effective **role-based task management system** using React. It is ideal for learning **authentication flow, state management, and component-based architecture**.
+
+---
+
+Feel free to explore and enhance this project 🚀
