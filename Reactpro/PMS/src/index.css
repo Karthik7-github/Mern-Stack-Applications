@@ -1,0 +1,359 @@
+@import "tailwindcss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.box1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.box2 {
+  border: 2px solid red;
+  width: 40%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid #38e0a8;
+}
+
+.formbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 50vh;
+}
+
+.text1 {
+  border: 2px solid #38e0a8;
+  padding: 4px 20px;
+  border-radius: 100px;
+  font-size: large;
+  width: 250px;
+}
+
+.text2 {
+  border: 2px solid #38e0a8;
+  padding: 4px 20px;
+  border-radius: 100px;
+  font-size: large;
+  margin-top: 15px;
+  width: 250px;
+}
+
+input::placeholder {
+  color: rgb(152, 145, 145);
+}
+
+.btnlog {
+  width: 250px;
+  background-color: #38e0a8;
+  margin-top: 30px;
+  border-radius: 100px;
+  font-size: large;
+  padding: 4px 10px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.btnlog:hover{
+  box-shadow: 4px 2px 40px #38e0a8;
+}
+
+/* emp box*/
+
+.empbox{
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1c1c;
+}
+
+.headbox{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.logoutbtn{
+  padding: 5px 10px;
+  background-color: rgb(255, 22, 22);
+  border-radius: 3px;
+  color: whitesmoke;
+  font-size: medium;
+  font-weight: 600;
+}
+
+/* Task List Numbers */
+
+.tasklist1{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.tasklist2{
+  width: 24%;
+  background-color: rgb(248, 87, 87);
+  padding: 10px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  gap: 20px;
+}
+
+.red{
+  background-color: rgb(248, 73, 73);
+}
+
+.blue{
+  background-color: rgb(75, 75, 232);
+}
+
+.green{
+  background-color: rgb(61, 212, 61);
+}
+
+.yellow{
+  background-color: rgb(248, 81, 192);
+}
+
+/* Task List */
+
+.tlist{
+  height: 55vh;
+  /* background-color: #ff3030; */
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.tlistbox{
+  height: 100%;
+  width: 300px;
+  background-color: rgb(153, 110, 255);
+  border-radius: 15px;
+  flex-shrink: 0;
+  padding: 20px 20px;
+}
+
+#scr::-webkit-scrollbar{
+  display: none;
+}
+
+.tlb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.tlh3{
+  background-color: rgb(255, 41, 41);
+  padding: 3px 5px ;
+  border-radius: 3px;
+}
+
+.tbh2{
+  margin-top: 10px;
+}
+
+.tbp{
+  margin-top: 10px;
+}
+
+.redb{
+  background-color: rgb(248, 73, 73);
+}
+.blueb{
+   background-color: rgb(75, 75, 232);
+}
+.greenb{
+ background-color: rgb(61, 212, 61);
+}
+.pinkb{
+ background-color: rgb(248, 81, 192);
+}
+
+/* Admin Dashboard */
+
+.adm{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+}
+
+.admform{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(30, 27, 27);
+  flex-wrap: wrap;
+  margin-top:20px;
+  border-radius: 5px;
+  height: 50vh;
+}
+
+.mainf{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.formt{
+  width: 400px;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 5px;
+  background-color: transparent;
+  border: 2px solid rgb(142, 137, 137);
+  margin-top: 2px;
+}
+
+.desf{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.admdes{
+  background-color: transparent;
+  border: 2px solid rgb(142, 137, 137);
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.admbtn{
+  width: 390px;
+  background-color: rgb(38, 255, 186);
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 45px;
+}
+
+/* All Tasks */
+.allto{
+  background-color: #1c1c1c;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  overflow: auto;
+  /* height: 200px; */
+}
+
+.allti{
+  /* background-color: rgb(255, 112, 112); */
+  padding: 10px 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+/*  Accepted task */
+
+.acptbox{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px; 
+}
+
+.acptbox .ab1{
+  background-color:rgb(2, 255, 2);
+  padding: 2px 5px;
+  font-size: small;
+  margin-top: 10px;
+  width: 120px;
+  border-radius: 4px;
+}
+
+.acptbox .ab2{
+  background-color: rgb(255, 40, 40);
+  padding: 2px 4px;
+  font-size: small;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+/* New Task*/
+.ntbox{
+  margin-top: 30px;
+  border: 1.4px solid black;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background-color: white;
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* Complete Task */
+.ctbox{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctbox .ctb1{
+  width: 50%;
+  background: white;
+  color: black;
+  height: 40px;
+  font-size:large ;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+/* failed Task */
+
+.fbox{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fbox .fb1{
+   width: 50%;
+  background: white;
+  color: black;
+  height: 40px;
+  font-size:large ;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 4px;
+}
