@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # MERN Stack Applications Collection
 
 This repository contains a collection of different **MERN Stack (MongoDB, Express.js, React, Node.js)** applications. Each folder represents a separate project demonstrating various features, concepts, and real-world use cases of full-stack development.
@@ -30,7 +27,3 @@ This repository contains a collection of different **MERN Stack (MongoDB, Expres
 * Make sure to install dependencies (`npm install`) inside individual project folders
 * Environment variables may be required for some applications
 
----
-
-Feel free to explore, learn, and build upon these projects!
->>>>>>> 7c31d99149f40eebe565c566d5197b4363fcbafd
